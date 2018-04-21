@@ -8,11 +8,14 @@ int main(){
     int * ptr;
 
     int val = 9;
-
-    //ptr = &val;
+    
+    //ptr = &val; // Son equivalentes
     *ptr = val;
 
     cout<<*ptr<<endl;
+
+    int *xPtr = 9; // error: invalid conversion from 'int' to 'int*'
+
 
     return 0;
 
